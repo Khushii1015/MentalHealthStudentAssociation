@@ -537,25 +537,26 @@ nav.scrolled { box-shadow: var(--shadow-sm); }
   transition: transform 0.3s;
 }
 .award-card:hover { transform: translateY(-4px); }
+.award-card h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-weight: 600; color: var(--text-dark);
+}
+.award-card p { font-size: 0.82rem; color: var(--text-light); margin-top: 0.4rem; }
+
 .award-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem 0;
 }
+
 .award-icon img {
   width: 180px;
   height: 180px;
   object-fit: contain;
-  border-radius: 12px;
+  border-radius: 12px !important;
   border: none;
-  flex-shrink: 0;
 }
-.award-card h4 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem; font-weight: 600; color: var(--text-dark);
-}
-.award-card p { font-size: 0.82rem; color: var(--text-light); margin-top: 0.4rem; }
 
 /* ── MENTORSHIP ── */
 .mentorship-intro {
