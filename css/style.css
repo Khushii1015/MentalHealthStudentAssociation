@@ -1055,9 +1055,8 @@ footer .footer-links a:hover { color: var(--mint); }
 
 
 .award-icon img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid rgba(247, 183, 210, 0.3);
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 12px;
 }
