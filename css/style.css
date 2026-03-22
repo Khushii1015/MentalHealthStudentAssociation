@@ -539,6 +539,20 @@ nav.scrolled { box-shadow: var(--shadow-sm); }
   transition: transform 0.3s;
 }
 .award-card:hover { transform: translateY(-4px); }
+.award-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.award-icon img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: none;
+  flex-shrink: 0;
+}
 .award-card h4 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem; font-weight: 600; color: var(--text-dark);
@@ -1050,20 +1064,4 @@ footer .footer-links a:hover { color: var(--mint); }
 }
 @media (max-width: 480px) {
   .events-gallery { grid-template-columns: 1fr; }
-}
-
-
-.award-icon {
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.award-icon img {
-  width: 180%;
-  height: 180%;
-  object-fit: contain;
-  border-radius: 12px !important;
-  border: none;
 }
