@@ -1052,3 +1052,12 @@ footer .footer-links a:hover { color: var(--mint); }
 @media (max-width: 480px) {
   .events-gallery { grid-template-columns: 1fr; }
 }
+
+
+.award-icon img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(247, 183, 210, 0.3);
+}
