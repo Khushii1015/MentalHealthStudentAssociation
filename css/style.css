@@ -527,16 +527,22 @@ nav.scrolled { box-shadow: var(--shadow-sm); }
 
 /* ── AWARDS ── */
 .awards-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 1.5rem; margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.2rem;
+  justify-items: center;
 }
 .award-card {
   background: white;
-  border-radius: 20px; padding: 2rem;
+  border-radius: 20px;
+  padding: 1.5rem;
   text-align: center;
   box-shadow: var(--shadow-sm);
   border: 1px solid rgba(247,183,210,0.18);
   transition: transform 0.3s;
+  width: 220px;
+  min-height: 320px;
 }
 .award-card:hover { transform: translateY(-4px); }
 .award-card h4 {
@@ -1054,16 +1060,17 @@ footer .footer-links a:hover { color: var(--mint); }
 
 
 .award-icon {
-  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.75rem 0;
 }
 
 .award-icon img {
-  width: 100%;
-  height: 100%;
+  width: 160px;
+  height: 160px;
   object-fit: contain;
   border-radius: 12px !important;
   border: none;
+  flex-shrink: 0;
 }
