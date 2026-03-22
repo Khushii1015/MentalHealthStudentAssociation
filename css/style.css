@@ -478,8 +478,6 @@ nav.scrolled { box-shadow: var(--shadow-sm); }
   gap: 3rem; margin-bottom: 4rem;
   position: relative;
 }
-.moment-item:nth-child(even) .moment-content { order: 2; }
-.moment-item:nth-child(even) .moment-visual { order: 1; }
 .moment-dot {
   position: absolute; left: 50%; top: 2rem;
   transform: translateX(-50%);
