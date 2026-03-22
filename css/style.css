@@ -551,8 +551,8 @@ nav.scrolled { box-shadow: var(--shadow-sm); }
 }
 
 .award-icon img {
-  width: 180px;
-  height: 180px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   border-radius: 12px !important;
   border: none;
