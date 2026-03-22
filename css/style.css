@@ -793,8 +793,6 @@ footer .footer-links a:hover { color: var(--mint); }
   .stats-strip { grid-template-columns: 1fr; }
   .moments-timeline::before { display: none; }
   .moment-item { grid-template-columns: 1fr; }
-  .moment-item:nth-child(even) .moment-content,
-  .moment-item:nth-child(even) .moment-visual { order: unset; }
   .moment-dot { display: none; }
   .awards-grid { grid-template-columns: 1fr; }
   .hero-cta { width: 100%; justify-content: center; }
