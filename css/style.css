@@ -1067,3 +1067,55 @@ footer .footer-links a:hover { color: var(--mint); }
   border-radius: 12px !important;
   border: none;
 }
+
+/* ─────────────────────────────────────────────
+   PATCH FOR css/style.css
+   Replace the existing "── AWARDS ──" block with
+   everything below, then delete the stray
+   ".award-icon" block at the very bottom of the
+   file (it's merged in here).
+   ───────────────────────────────────────────── */
+
+/* ── AWARDS ── */
+.awards-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1.5rem; margin-top: 1.2rem;
+}
+
+/* single award — fills the column instead of sitting half-width */
+.awards-grid-single {
+  grid-template-columns: 1fr;
+  margin-top: 0;
+  width: 100%;
+}
+
+.award-card {
+  background: white;
+  border-radius: 20px; padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(247,183,210,0.18);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.award-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+
+.award-card h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-weight: 600; color: var(--text-dark);
+}
+.award-card p { font-size: 0.82rem; color: var(--text-light); margin-top: 0.4rem; }
+
+.award-icon {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.award-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px !important;
+  border: none;
+}
+.awards-grid-single .award-icon { height: 260px; }
