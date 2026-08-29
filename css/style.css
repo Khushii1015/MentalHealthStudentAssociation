@@ -1068,6 +1068,7 @@ footer .footer-links a:hover { color: var(--mint); }
   border: none;
 }
 
+
 /* ─────────────────────────────────────────────
    PATCH FOR css/style.css
    Replace the existing "── AWARDS ──" block with
@@ -1082,11 +1083,9 @@ footer .footer-links a:hover { color: var(--mint); }
   gap: 1.5rem; margin-top: 1.2rem;
 }
 
-/* single award — fills the column instead of sitting half-width */
+/* single award — fills the width instead of sitting half-width */
 .awards-grid-single {
   grid-template-columns: 1fr;
-  margin-top: 0;
-  width: 100%;
 }
 
 .award-card {
@@ -1118,4 +1117,3 @@ footer .footer-links a:hover { color: var(--mint); }
   border-radius: 12px !important;
   border: none;
 }
-.awards-grid-single .award-icon { height: 260px; }
